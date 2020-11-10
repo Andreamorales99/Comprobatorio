@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitica</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="pink accent-1">
+
+    <div class="navbar">
+        <nav class="pink accent-1">
+            <div class="nav-wrapper container">
+                <img class="responsive-img" width="190" src="https://www.hatsu.co/img/logos/logo_Hatsu_ngr.svg">
+                <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                    <i class="material-icons white-text">menu</i>
+                </a>
+                <ul class="right hide-on-me-and-down">
+                    <li><a href="Products" class="white-text">Products</a></li>
+                    <li><a href="Support" class="white-text">Support</a></li>
+                    <li><a href="About" class="white-text">About</a></li>
+                    <li><button class="btn pink darken-3 waves-effect">Login</button></li>
+            </div>
+            </ul>
+    </div>
+    </nav>
+    </div>
+    <ul class="sidenav black" id="menu-responsive">
+        <li><a href="Products" class="white-text">Products</a></li>
+        <li>
+            <div class="divider pink"></div>
+        </li>
+        <li><a href="Support" class="white-text">Support</a></li>
+        <li>
+            <div class="divider pink"></div>
+        </li>
+        <li><a href="About" class="white-text">About</a></li>
+    </ul>
+
+    <div class="container section">
+
+
+
+        <a href="#idModal" class="btn modal-trigger red darken-4">NEW</a>
+
+
+
+        <div id="idModal" class="modal">
+
+            <div class="modal-content">
+                <h4>Lorem ipsum dolor sit </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, eos aliquam
+                    delectus repellendus totam iusto, fugit voluptatum, eius nemo corrupti quas cupiditate
+                    obcaecati. Optio itaque veritatis sint sequi ipsa vitae?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="" class="btn modal-close">Cerrar</a>
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">search</i>
+                <input type="text" id="buscar" class="autocomplete">
+                <label for="buscar">Buscar...</label>
+            </div>
+
+        </div>
+
+        <div class="card light-green accent-1">
+
+            <div class="card-content">
+                <span class="card-title">INFUSIONES</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="card orange lighten-3">
+
+            <div class="card-content">
+                <span class="card-title">SODAS</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="card teal accent-1">
+
+            <div class="card-content">
+                <span class="card-title">JUGOS</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+
+    </script>
+
+    <script>
+
+        document.addEventListener('DOMContentLoades', function () {
+            var options = {
+                data: {
+                    "Apple": null,
+                    "Microsoft": null,
+                    "Google": 'https://placehold.it/250x250'
+                }
+            }
+            var elems = document.querySelectorAll('.autocomplete');
+            var instances = M.Autocomplete.init(elems, options);
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
